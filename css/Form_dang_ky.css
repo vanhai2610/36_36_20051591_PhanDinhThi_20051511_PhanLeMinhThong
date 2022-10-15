@@ -1,0 +1,49 @@
+.form-group {
+    margin-bottom: 1rem;
+}
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    
+}
+.form_control
+{
+    margin-top: 50px;
+}
+.btn-regester
+{
+    background: #008f71;
+    color: #fff;
+    border-radius: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    width: 470px;
+    height: 42px;
+    border: none;
+    text-align: center;
+}
+#errTxt_Ho,
+#errTxt_Ten,
+#errTxt_Email,
+#errTxt_Sdt
+{
+color: rgb(253, 0, 0);
+}
+.mbt-40
+{
+    margin-bottom: 40px;
+}
+.title_regester h4
+{
+    font-size: 23px;
+    /*margin-bottom: 30px;*/
+    font-weight: 560;
+    height: auto;
+    padding-bottom: 0;
+    line-height: 1.2;
+   
+    font-weight: 600!important;
+    font-family: Muli,sans-serif!important;
+}

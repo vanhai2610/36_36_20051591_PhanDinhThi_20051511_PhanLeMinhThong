@@ -1,0 +1,93 @@
+.title_detail_page h3
+{
+    font-size: 23px;
+    margin-bottom: 30px;
+    font-weight: 560;
+    height: auto;
+    padding-bottom: 0;
+    line-height: 1.2;
+   
+    font-weight: 600!important;
+    font-family: Muli,sans-serif!important;
+}
+.img_news img
+{
+    width: 60%;
+
+}
+.title_content_news h4
+{
+
+    font-family: "Arial, Helvetica, sans-serif";
+    font-size: 22px;
+    color: #000;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.danhmuctintuc h4
+{
+    font-size: 23px;
+    margin-bottom: 30px;
+    font-weight: 560;
+    height: auto;
+    padding-bottom: 0;
+    line-height: 1.2;
+    
+    font-weight: 600!important;
+    font-family: Muli,sans-serif!important;
+}
+.menu_allproduct li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(59, 58, 58);
+    line-height: 40px;
+    font-weight: 300;
+}
+.menu_allproduct li {
+    list-style: none;
+}
+.menu_allproduct li a:hover
+{
+color: var(--main-color);
+background-color: #ccc;
+}
+.mt-20
+{
+    margin-top: 20px;
+}
+.card {
+    width: 50%;
+    margin-bottom: 15px;
+    padding: 2px;
+    float: left;
+    margin-right: 40px;
+    background-color: #fff;
+    height: 450px;
+    padding: 5px;
+    border: 1px solid var(--main-color);
+}
+.card-img-top {
+    width: 100%;
+}
+.card-body {
+    padding: 0 10px;
+}
+.card-title {
+    font-size: 13px;
+    color: #000;
+    line-height: 1.2;
+    font-weight: bold;
+    margin-top: 30px;
+    font-family: Muli,sans-serif!important;
+    text-decoration: none;
+}
+.pdl-30px
+{
+    padding-left: 75px;
+    border-left: 1px solid var(--main-color);
+}
+.content_news_text p
+{
+text-indent: 50px;
+
+}

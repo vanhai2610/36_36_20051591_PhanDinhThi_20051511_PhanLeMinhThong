@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Members</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/ChiTietSanPham.css">
+    <link rel="stylesheet" href="../icon/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="../css/DangNhap.css">
+    <link rel="stylesheet" href="../css/Home.css">
+    <link rel="stylesheet" href="../css/Form_dang_ky.css">
+    <link rel="stylesheet" href="../css/Gio_Hang.css">
+    <link rel="stylesheet" href="../css/members.css">
+    <link rel="stylesheet" href="../css/Thanh_toan.css">
+    <link rel="stylesheet" href="../css/Lien_He.css">
+
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trang chủ</title>
+        <link rel="stylesheet" href="../css/Home.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/DangNhap.css">
+        <link rel="stylesheet" href="../icon/fontawesome-free-6.1.1-web/css/all.css">
+        <script src="../js/jquery-3.6.0.js"></script>
+        <script src="../js/Home.js"></script>
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../font/fontawesome-free-6.1.1-web/css/all.min.css">
+        <script src="../bootstrap/js/jquery-3.6.0.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../css/members.css">
+    </head>
+    
+    <body>
+        <div id="main">
+            
+            <div class="header-fix">
+                <div id="header">
+                    <div class="shopName">
+                        <a href="../html/Home.html"><img src="../img/Logo - 9Slide.png" alt=""></a>
+                    </div>
+                    <div class="search-nav">
+                        <input type="text" placeholder="Nhập từ khóa tìm kiếm..." id="search-input" class="input_txt">
+                        <a href="../html/allsanpham.html"><i class="fa-solid fa-magnifying-glass" id="search"></i></a>
+                       
+                    </div>
+        
+                    <div class="button-dang-nhap">
+                        <span>
+                            <button onclick="document.getElementById('modal').style.display=('block') ">
+                                <i class="fa-solid fa-circle-user"></i>
+                            </button>
+                        </span>
+                    </div>
+                    <div class="gioHang">
+                        <a href="#" onclick="giohangOn()"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <div class="gioHang_hover container-fluid">
+                            <div class="tamgiac">
+                                <i class="fa-solid fa-caret-up"></i>
+                            </div>
+                            <div class="row">
+                                <div class="title_gioHang">
+                                    <h4>Giỏ hàng của bạn</h4>
+                                </div>
+                                <div class="gioHang_hover_sp">
+                                    <div class="img_sanpham">
+                                        <img class="img" src="../img/S1.jpg" alt="">
+                                    </div>
+                                    <div class="name_sanpham"><p>Sách</p></div>
+                                    <div class="soluong_sanpham"><select class="form-control small-select" name="quantity" id="qty9343848" onchange="this.form.submit()">
+                                        <option value="1" selected="">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>	
+                                    </select></div>
+                                    <div class="gia_sanpham"><p>150.000đ</p></div>
+                                </div>
+                              <div class="gioHang_hover_button">
+                                  <button type="button" class="btn">Thanh toán</button>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                   
+                </div>
+        
+            </div>
+            <div id="nav-fix">
+                <div class="nav">
+                    <ul class="dropdown-list">
+                        <li class="nav_sp"><a href="../html/Home.html">Trang chủ</a></li>
+                        <li class="nav_sp nav_menu_hover"><a href="../html/allsanpham.html">Sản phẩm</a>
+                            <div >
+                                <ul class="dropdown_product_item_menu">
+                                    <ul class="ul_menu_item_1">
+                                        <li class="ul_menu_item"><a href="../html/allsanpham.html">Sách tổng hợp</a>
+                                   
+                                        </li>
+                                        <li class="ul_menu_item"><a href="../html/allsanpham.html">Sách ngoại ngữ</a>
+                                        
+                                        </li>
+                                        <li class="ul_menu_item"><a href="../html/allsanpham.html">Sách kinh doanh</a>
+                                        
+                                        </li>
+                                        <li class="ul_menu_item"><a href="../html/allsanpham.html">Sách thiếu nhi-văn học</a>
+                                        
+                                        </li>
+                                        <li class="ul_menu_item"><a href="../html/allsanpham.html">Sách phong thuỷ-tham khảo</a>
+                                       
+                                        </li>
+                                    </ul>
+                                   <li class="img_item_dropdown_menu">
+                                       <img src="../img/S3.jpg" alt="Dong Ho">
+                                   </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav_sp"><a href="../html/news.html">Tin tức</a></li>
+                        <li class="nav_sp"><a href="../html/sitemap.html">Site Map</a></li>
+                        <li class="nav_sp"><a href="../html/members.html">Giới thiệu</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content_gioi_thieu">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                           <div class="row itr_content_all">
+                            <div class="col-md-6">
+                                <div class="img_introduce">
+                                    <img src="../img/Logo - 9Slide.png" alt="">
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-6 mt-45">
+                                <div class="content_it">
+                                    <div class="title_intr">
+                                        <h3>Thông tin về chúng tôi</h3>
+                                    </div>
+                                    <div class="text_ct">
+                                       <p> Đến với không gian mua sắm trực tuyến bookstoreonline.com, khách hàng có thể dễ dàng tìm thấy những cuốn sách hay, đa thể loại của nhiều nhà xuất bản, công ty sách trong và ngoài nước chính hãng của những thương hiệu uy tín. Cùng tiêu chí không ngừng hoàn thiện, nâng cao chất lượng sản phẩm, dịch vụ, Bookstore Online cam kết mang đến cho khách hàng trải nghiệm mua sắm trực tuyến an toàn, tiện lợi: cách đặt hàng đơn giản, phương thức thanh toán đa dạng, dịch vụ chăm sóc khách hàng tận tình, chu đáo.</p>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                           </div>
+
+                           </div>
+
+                           <div class="row itr_content_all">
+                            <div class="col-md-6 mt-145">
+                                <div class="img_introduce">
+                                    <img src="../img/thispage.jpg" alt="">
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-6 mt-145">
+                                <div class="content_it">
+                                    <div class="title_intr">
+                                        <h3>Giới thiệu về trang này</h3>
+                                    </div>
+                                    <div class="text_ct">
+                                       <p> Trang web được xây dựng dựa trên một số hình ảnh sản phẩm của trang thương mại điện tử Tiki. Tuy vậy nó khác nhau hoàn toàn.
+                                        <br>
+                                        Trân trọng </p>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                           </div>
+
+                           <div id="main-member">
+                            <div class="info-members row">
+                                <h1>Thông tin các thành viên</h1>
+                                <div class="img-member">
+                                    <div class="img-face">
+                                        <img src="../img/mem1.jpg" alt=""> <br>
+                                        <a href="https://www.facebook.com/thiphan63">20051591 - Phan Đình Thi</a>
+                                        <p>"Tuổi trẻ không phải là lý do để bạn được phép sống buông thả."</p>
+                                        <div class="interests">
+                                            <h2 class="heading">Sở thích</h2>
+                                            <ul>
+                                                <li>Xem phim , chơi game</li>
+                                                <li>Chạy bộ , Viết Code</li>
+                                                <li>Ca hát , Sáng tạo power point , ...</li>
+                                            </ul>
+                            
+                                        </div>
+                                    </div>
+                                    <div class="img-face">
+                                        <img src="../img/mem2.JPG" alt=""> <br>
+                                        <a href="https://www.facebook.com/thong.nobita.967">20051511 - Phan Lê Minh Thông</a>
+                                        <p>“Cho nhiều hơn nhận thì sẽ được nhận nhiều hơn cho.”</p>
+                                        <div class="interests">
+                                            <h2 class="heading">Sở thích</h2>
+                                            <ul>
+                                                <li>Xem phim , Học tiếng anh</li>
+                                                <li>Đọc sách , nghe nhạc</li>
+                                                <li>Chơi thể thao ,...</li>
+                                            </ul>       
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="website">
+                                <h2 class="heading">LỜI CẢM ƠN</h2>
+                                <div class="website_text">
+                                    <p>Thời gian trôi nhanh đến lạ, mới đó mà đã hết học kì rồi, em xin chân thành cảm ơn các thầy cô giáo khoa Công Nghệ Thông Tin vì đã hết lòng dạy dỗ chúng em.
+                                         Đặc biệt em xin gửi lời cảm ơn sâu sắc đến thầy Thuận vì thầy đã luôn hết lòng giúp đỡ, truyền dạy những kiến thức về bộ môn Công Nghệ Web một cách đầy đủ, uyên thâm nhất.
+                                         Bữa tiệc nào rồi cũng sẽ tàn, cũng đã đến lúc kết thúc môn, em chúc thầy sức khỏe, thành công trên con đường giảng dạy</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        </div>
+
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+            </div>
+    <div id="main-member">
+        
+        <div id="content-bottom">
+            <div class="text">
+                <h3 class="top">CHÚNG TÔI Ở ĐÂY</h3>
+                <ul>
+                    <li>Nhà sách "Online Bookstore"</li>
+                    <li>VPGD: Số 177,Phường 5 - Gò Vấp - TP.HCM</li>
+                    <li>Hotline:
+                        <link rel="stylesheet" href="#">0586361021</li>
+                    <li>Tư vấn bán hàng: (8h-21h hàng ngày)</li>
+                </ul>
+            </div>
+            <div class="text">
+                <h3 class="top">VỀ ONLINE BOOKSTORE</h3>
+                <ul>
+                    <li><a href="#">Tìm kiếm</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Điều khoản dịch vụ</a></li>
+                </ul>
+            </div>
+
+            <div class="text">
+                <h3 class="top">CHÍNH SÁCH</h3>
+                <ul>
+                    <li><a href="#">Chính sách đối sản phẩm</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Chính sách vận chuyển</a></li>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                    <li><a href="#">Chính sách thanh toán</a></li>
+                    <li><a href="#">Chính sách mua hàng</a></li>
+                </ul>
+            </div>
+
+            <div class="text">
+                <h3 class="top">HỖ TRỢ</h3>
+            </div>
+
+            <div class="text">
+                <ul>
+                    <h3 class="top">LIÊN HỆ</h3>
+                    <li class="icon">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="button-home">
+            <div>
+                <a href="#">
+                    <i class="fa-solid fa-angles-up"></i>
+                    <p>Quay lại đầu trang</p>
+                </a>
+            </div>
+        </div>
+       
+    </div>
+    <div id="modal">
+        <div class="modal-overlay"></div>
+        <div class="login-box">
+            <h2>Login</h2>
+            <button onclick="document.getElementById('modal').style.display=('none') ">
+                <i class="fa-solid fa-xmark" ></i>
+            </button>
+            <form>
+                <div class="user-box">
+                    <input type="text" name="" required="">
+                    <label>Username</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="" required="">
+                    <label>Password</label>
+                </div>
+                <div class="button-submit">
+                    <a href="#" class="link">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> Đăng nhập
+                    </a>
+                </div>
+            </form>
+            <span class="checkBox"><input type="checkbox"> Nhớ mật khẩu</span> 
+            <p>Bạn chưa có tài khoản? <a href="../html/Form-dang-ky.html">Đăng kí</a> ngay</p>
+        </div>
+    </div>
+</div>
+<div id="modal">
+    <div class="modal-overlay"></div>
+    <div class="login-box">
+        <h2>Login</h2>
+        <button onclick="document.getElementById('modal').style.display=('none') ">
+            <i class="fa-solid fa-xmark" ></i>
+        </button>
+        <form>
+            <div class="user-box">
+                <input type="text" name="" required="">
+                <label>Username</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="" required="">
+                <label>Password</label>
+            </div>
+            <div class="button-submit">
+                <a href="#" class="link">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span> Đăng nhập
+                </a>
+            </div>
+        </form>
+        <span class="checkBox"><input type="checkbox"> Nhớ mật khẩu</span> 
+        <p>Bạn chưa có tài khoản? <a href="../html/Form-dang-ky.html">Đăng kí</a> ngay</p>
+    </div>
+</div>
+</body>
+
+</html>

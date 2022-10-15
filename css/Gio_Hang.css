@@ -1,0 +1,108 @@
+.img_card.col-md-4 img
+{
+    width: 204px;
+}
+.text_img.col-md-8
+{
+   padding-left: 40px;
+}
+.form-control.small-select
+{
+    display: inline-block;
+    width: 15%;
+    border: 0;
+    outline: #ccc;
+    border-radius: 0;
+    padding: 10px 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    margin-left: 10px;
+}
+.price_quantity p
+{
+margin-top: 50px;
+color: rgb(237, 8, 8);
+font-size: 2.3rem;
+font-weight: bold;
+}
+.title_product_name h4,
+.price_quantity p
+{
+    font-weight: bolder;
+}
+.card
+{
+    margin-top: 40px;
+    padding-top: 21px;
+    height: 223px;
+    border-top: 1px solid #ccc;
+}
+
+
+.title_cart h4
+{
+    margin-top: 25px;
+    margin-bottom: 30px;
+    height: auto;
+    padding-bottom: 0;
+    line-height: 1.2;
+    
+    font-weight: 600!important;
+    font-family: Muli,sans-serif!important;
+}
+.tongtien
+{
+    background-color: #eee;
+    padding: 20px;
+    position: fixed;
+    width: 27%;
+    top: 246px;
+    right: 150px;
+}
+.title_order h4
+{
+    font-size: 23px;
+    margin-bottom: 30px;
+    height: auto;
+    padding-bottom: 0;
+    line-height: 1.2;
+    
+    font-weight: 600!important;
+    font-family: Muli,sans-serif!important;
+    text-align: center;
+  
+}
+.tt_content
+{
+  
+    font-weight: bold;
+    margin-right: 10px;
+}
+.tt_content span
+{
+    margin-top: 50px;
+color: rgb(237, 8, 8);
+font-size: 2.3rem;
+font-weight: bold;
+margin-left: 10px;
+}
+.btn-Giohang .add-cart
+{
+    background: #008f71;
+    color: #fff;
+    border-radius: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    width: 416px;
+    height: 42px;
+    border: none;
+    /* margin-top: -4px; */
+    position: absolute;
+    right: -1px;
+    top: 220px;
+}

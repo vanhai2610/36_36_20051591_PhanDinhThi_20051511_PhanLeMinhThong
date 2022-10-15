@@ -1,0 +1,47 @@
+.title_sm h3
+{
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 560;
+    height: auto;
+    padding-bottom: 0;
+    line-height: 1.2;
+    font-weight: 600!important;
+    font-family: Muli,sans-serif!important;
+    width: 111px;
+}
+.img_sm img
+{
+width: 100%;
+}
+.ctn_img_sm
+{
+    
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.img_sm
+{
+border: 1px solid #04b995;
+}
+.content_sitemap
+{
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.title_sm
+{
+color: #04b995;
+display: flex;
+justify-content: center;
+position: absolute;
+    width: 111px;
+    top: 0px;
+    left: 40px;
+}
+.title_sm::before
+{
+content: "";
+height: 2px;
+}

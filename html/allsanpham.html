@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tat ca san pham</title>
+    <link rel="stylesheet" href="../css/Home.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/DangNhap.css">
+    <link rel="stylesheet" href="../icon/fontawesome-free-6.1.1-web/css/all.css">
+
+    <script src="../js/Home.js"></script>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <script src="../bootstrap/js/jquery-3.6.0.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/allproduct.css">
+</head>
+
+<body>
+    <div class="header-fix">
+        <div id="header">
+            <div class="shopName">
+                <a href="../html/Home.html"><img src="../img/Logo - 9Slide.png" alt=""></a>
+            </div>
+            <div class="search-nav">
+                <input type="text" placeholder="Nhập từ khóa tìm kiếm..." id="search-input" class="input_txt">
+                <i class="fa-solid fa-magnifying-glass" id="search"></i>
+            </div>
+            <div class="button-dang-nhap">
+                <span>
+                    <button onclick="document.getElementById('modal').style.display=('block') ">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </button>
+                </span>
+            </div>
+            <div class="gioHang">
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <div class="gioHang_hover container-fluid">
+                    <div class="tamgiac">
+                        <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                    <div class="row">
+                        <div class="title_gioHang">
+                            <h4>Giỏ hàng của bạn</h4>
+                        </div>
+                        <div class="gioHang_hover_sp">
+                            <div class="img_sanpham">
+                                <img class="img" src="../img/S1.jpg" alt="">
+                            </div>
+                            <div class="name_sanpham"><p>Sách</p></div>
+                            <div class="soluong_sanpham"><select class="form-control small-select" name="quantity" id="qty9343848" onchange="this.form.submit()">
+                                <option value="1" selected="">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>	
+                            </select></div>
+                            <div class="gia_sanpham"><p>150.000đ</p></div>
+                        </div>
+                        <div class="gioHang_hover_button">
+                            <button type="button" class="btn">Thanh toán</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="nav-fix">
+        <div class="nav">
+            <ul class="dropdown-list">
+                <li class="nav_sp"><a href="../html/Home.html">Trang chủ</a></li>
+                <li class="nav_sp nav_menu_hover"><a href="../html/allsanpham.html">Sản phẩm</a>
+                    <div >
+                        <ul class="dropdown_product_item_menu">
+                            <ul class="ul_menu_item_1">
+                                <li class="ul_menu_item"><a href="../html/allsanpham.html">Sách tổng hợp</a>
+                           
+                                </li>
+                                <li class="ul_menu_item"><a href="../html/allsanpham.html">Sách ngoại ngữ</a>
+                                
+                                </li>
+                                <li class="ul_menu_item"><a href="../html/allsanpham.html">Sách kinh doanh</a>
+                                
+                                </li>
+                                <li class="ul_menu_item"><a href="../html/allsanpham.html">Sách thiếu nhi-văn học</a>
+                                
+                                </li>
+                                <li class="ul_menu_item"><a href="../html/allsanpham.html">Sách phong thuỷ-tham khảo</a>
+                               
+                                </li>
+                            </ul>
+                           <li class="img_item_dropdown_menu">
+                               <img src="../img/S3.jpg" alt="Dong Ho">
+                           </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_sp"><a href="../html/news.html">Tin tức</a></li>
+                <li class="nav_sp"><a href="../html/sitemap.html">Site Map</a></li>
+                <li class="nav_sp"><a href="../html/members.html">Giới thiệu</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="container_allproduct" class="container-fluid">
+        <div class="row mt-20">
+
+            <div class="col-md-1"></div>
+            <div class="col-md-10 row">
+                <div class="col-md-3 left_ctn">
+                    <h4>Danh mục sản phẩm</h4>
+                    <div class="menu_allproduct nav navbar-nav">
+                        <ul class="ml-15">
+                            <li class="navbar-item"><a class="link_href" href="#" id="formen_click"
+                                    onclick="filterProduct('TH')">Sách tổng hợp</a></li>
+                            <li class="navbar-item"><a class="link_href" href="#" id="forwman_click"
+                                    onclick="filterProduct('NN')">Sách ngoại ngữ</a></li>
+                            
+                            <li class="navbar-item"><a class="link_href" href="#" id="newpr_click"
+                                    onclick="filterProduct('KD')">Sách kinh doanh</a></li>
+                            <li class="navbar-item"><a class="link_href" href="#" id="hotpr_click"
+                                    onclick="filterProduct('TN')">Sách thiếu nhi-văn học</a></li>
+                            <li class="navbar-item"><a class="link_href" href="#" id="hotpr_click"
+                                    onclick="filterProduct('TK')">Sách phong thuỷ-tham khảo</a></li>
+                            <li class="navbar-item"><a class="link_href" href="#" id="allproduct_click"
+                                    onclick="filterProduct('all')">Tất cả sản phẩm</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9  allproducts">
+                    <h4>Tất cả sản phẩm</h4>
+                    <div class="row justify-content-between">
+                        <div class="cover-card announcement col-md-12" id="wmen wwman wbrand neww hotw allw">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+    <!-- Footer---------------------------- -->
+    <div id="content-bottom">
+        <div class="text">
+            <h3 class="top">CHÚNG TÔI Ở ĐÂY</h3>
+            <ul>
+                <li>Nhà sách "Online Bookstore"</li>
+                <li>VPGD: Số 177,Phường 5 - Gò Vấp - TP.HCM</li>
+                <li>Hotline:
+                    <link rel="stylesheet" href="#">0586361021</li>
+                <li>Tư vấn bán hàng: (8h-21h hàng ngày)</li>
+            </ul>
+        </div>
+        <div class="text">
+            <h3 class="top">VỀ ONLINE BOOKSTORE</h3>
+            <ul>
+                <li><a href="#">Tìm kiếm</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Điều khoản dịch vụ</a></li>
+            </ul>
+        </div>
+
+        <div class="text">
+            <h3 class="top">CHÍNH SÁCH</h3>
+            <ul>
+                <li><a href="#">Chính sách đối sản phẩm</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Chính sách vận chuyển</a></li>
+                <li><a href="#">Chính sách bảo hành</a></li>
+                <li><a href="#">Chính sách thanh toán</a></li>
+                <li><a href="#">Chính sách mua hàng</a></li>
+            </ul>
+        </div>
+
+        <div class="text">
+            <h3 class="top">HỖ TRỢ</h3>
+        </div>
+
+        <div class="text">
+            <ul>
+                <h3 class="top">LIÊN HỆ</h3>
+                <li class="icon">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="button-home">
+        <div>
+            <a href="#">
+                <i class="fa-solid fa-angles-up"></i>
+                <p>Quay lại đầu trang</p>
+            </a>
+        </div>
+    </div>
+
+    </div>
+    <div id="modal">
+        <div class="modal-overlay"></div>
+        <div class="login-box">
+            <h2>Login</h2>
+            <button onclick="document.getElementById('modal').style.display=('none') ">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <form>
+                <div class="user-box">
+                    <input type="text" name="" required="">
+                    <label>Username</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="" required="">
+                    <label>Password</label>
+                </div>
+                <div class="button-submit">
+                    <a href="#" class="link">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> Đăng nhập
+                    </a>
+                </div>
+            </form>
+            <span class="checkBox"><input type="checkbox"> Nhớ mật khẩu</span>
+            <p>Bạn chưa có tài khoản? <a href="../html/Form-dang-ky.html">Đăng kí</a> ngay</p>
+        </div>
+    </div>
+
+    <script>
+        const listProduct = [
+            {
+                id: 1,
+                productCode: 'B1',
+                name: 'Hoàng Tử Bé',
+                publisher: 'Kim Đồng',
+                status: 'Còn hàng',
+                unitprice: '23.000đ',
+                information: '(Tái Bản 2022)',
+                type: 'Hot',
+                img: '../img/S12.jpg',
+                kind: 'TH'
+            },
+            {
+                id: 2,
+                productCode: 'B2',
+                name: 'Hợp nhất với vũ trụ',
+                publisher: 'First News',
+                status: 'Còn hàng',
+                unitprice: '60.000đ',
+                information: '(Bìa Mềm) (Tái Bản 2020)',
+                type: 'Hot',
+                img: '../img/S13.jpg',
+                kind: 'TH'
+            },
+            {
+                id: 3,
+                productCode: 'B3',
+                name: 'Giao tiếp bất kỳ ai',
+                publisher: 'Thái Hà',
+                status: 'Còn hàng',
+                unitprice: '55.000đ',
+                information: '(Tái Bản)',
+                type: 'Hot',
+                img: '../img/S14.jpg',
+                kind: 'TH'
+            },
+            {
+                id: 4,
+                productCode: 'B4',
+                name: 'Combo Lịch Sử Văn Minh Thế Giới',
+                publisher: 'Hồng Đức',
+                status: 'Còn hàng',
+                unitprice: '355.000đ',
+                information: 'Tủ Sách Nguyễn Hiến Lê',
+                type: 'Hot',
+                img: '../img/S15.jpg',
+                kind: 'TH'
+            },
+            {
+                id: 5,
+                productCode: 'B5',
+                name: 'Hạnh Phúc Tắc Đường Ở Một Quãng Xa Xôi',
+                publisher: 'Văn Hoá-Văn Nghệ',
+                status: 'Còn hàng',
+                unitprice: '95.000đ',
+                information: 'Tủ Sách Nguyễn Hiến Lê',
+                type: 'Hot',
+                img: '../img/S16.jpg',
+                kind: 'TH'
+            },
+            {
+                id: 6,
+                productCode: 'B6',
+                name: 'Sống Thanh Thản Như Người Thụy Điển',
+                publisher: 'Tổng hợp TPHCM',
+                status: 'Còn hàng',
+                unitprice: '54.000đ',
+                information: 'Tủ Sách Nguyễn Hiến Lê',
+                type: 'Hot',
+                img: '../img/S17.jpg',
+                kind: 'TH'
+            },
+            {
+                id: 7,
+                productCode: 'B7',
+                name: '21 Cách Học Tiếng Anh Du Kích',
+                publisher: 'Đà Nẵng',
+                status: 'Còn hàng',
+                unitprice: '148.000đ',
+                information: 'FuSuSu (Song ngữ)',
+                type: 'Hot',
+                img: '../img/S18.jpg',
+                kind: 'NN'
+            },
+            {
+                id: 8,
+                productCode: 'B8',
+                name: 'Học Tiếng Anh Giao Tiếp Chỉ Trong 30 Ngày',
+                publisher: 'Tổng hợp TPHCM',
+                status: 'Còn hàng',
+                unitprice: '228.000đ',
+                information: 'FuSuSu (Song ngữ)',
+                type: 'Hot',
+                img: '../img/S19.jpg',
+                kind: 'NN'
+            },
+            {
+                id: 9,
+                productCode: 'B9',
+                name: 'Sơ Đồ Tư Duy 3300 Chữ Hán tập 1+2',
+                publisher: 'Thanh niên',
+                status: 'Còn hàng',
+                unitprice: '230.000đ',
+                information: 'FuSuSu (Song ngữ)',
+                type: 'Hot',
+                img: '../img/S20.jpg',
+                kind: 'NN'
+            },
+            {
+                id: 10,
+                productCode: 'B10',
+                name: 'Chuyên Đề Ngữ Pháp Luyện Dịch Quan Trọng',
+                publisher: 'Thanh niên',
+                status: 'Còn hàng',
+                unitprice: '230.000đ',
+                information: 'FuSuSu (Song ngữ)',
+                type: 'Hot',
+                img: '../img/S21.jpg',
+                kind: 'NN'
+            },
+            {
+                id: 11,
+                productCode: 'B11',
+                name: 'Perfect English Vocabulary',
+                publisher: 'Dân Trí',
+                status: 'Còn hàng',
+                unitprice: '150.000đ',
+                information: 'FuSuSu (Song ngữ)',
+                type: 'Hot',
+                img: '../img/S22.jpg',
+                kind: 'NN'
+            },
+            {
+                id: 12,
+                productCode: 'B12',
+                name: 'Từ điển tiếng Pháp: Le Robert De Poche',
+                publisher: 'Hachette',
+                status: 'Còn hàng',
+                unitprice: '288.000đ',
+                information: 'FuSuSu (Song ngữ)',
+                type: 'Hot',
+                img: '../img/S23.jpg',
+                kind: 'NN'
+            },
+            {
+                id: 13,
+                productCode: 'B13',
+                name: 'Tạo Lập Mô Hình Kinh Doanh',
+                publisher: 'Lao Động',
+                status: 'Còn hàng',
+                unitprice: '194.000đ',
+                information: 'FuSuSu (Song ngữ)',
+                type: 'Hot',
+                img: '../img/S24.jpg',
+                kind: 'KD'
+
+
+            },
+            {
+                id: 14,
+                productCode: 'B14',
+                name: 'Đánh Bại Phố Wall',
+                publisher: 'Lao Động',
+                status: 'Còn hàng',
+                unitprice: '142.000đ',
+                information: 'FuSuSu (Song ngữ)',
+                type: 'Hot',
+                img: '../img/S25.jpg',
+                kind: 'KD'
+            }, 
+            {
+                id: 15,
+                productCode: 'B15',
+                name: 'Phương Pháp Đầu Tư Warren Buffett',
+                publisher: 'Công Thương',
+                status: 'Còn hàng',
+                unitprice: '104.000đ',
+                information: 'FuSuSu (Song ngữ)',
+                type: 'Hot',
+                img: '../img/S26.jpg',
+                kind: 'KD'
+            }, 
+            {
+                id: 16,
+                productCode: 'B16',
+                name: 'Siêu Nhí Hỏi Nhà Khoa Học Trả Lời',
+                publisher: 'Dân Trí',
+                status: 'Còn hàng',
+                unitprice: '125.000đ',
+                information: 'FuSuSu (Song ngữ)',
+                type: 'Hot',
+                img: '../img/S27.jpg',
+                kind: 'TN'
+            }, {
+                id: 17,
+                productCode: 'B17',
+                name: 'Siêu Nhí Biết Tuốt',
+                publisher: 'Hà Nội',
+                status: 'Còn hàng',
+                unitprice: '104.000đ',
+                information: 'FuSuSu (Song ngữ)',
+                type: 'Hot',
+                img: '../img/S28.jpg',
+                kind: 'TN'
+
+            }, {
+                id: 18,
+                productCode: 'B18',
+                name: '300 Trò Chơi Phát Triển Trí Tuệ Cho Trẻ 3 Tuổi',
+                publisher: 'Phụ Nữ',
+                status: 'Còn hàng',
+                unitprice: '33.000đ',
+                information: 'FuSuSu (Song ngữ)',
+                type: 'Hot',
+                img: '../img/S29.jpg',
+                kind: 'TN'
+
+
+            }, {
+                id: 19,
+                productCode: 'B19',
+                name: 'Kinh Dịch',
+                publisher: 'Văn Học',
+                status: 'Còn hàng',
+                unitprice: '225.000đ',
+                information: 'FuSuSu (Song ngữ)',
+                type: 'Hot',
+                img: '../img/S30.jpg',
+                kind: 'TK'
+
+
+            }, {
+                id: 20,
+                productCode: 'B20',
+                name: 'Thần số học',
+                publisher: 'Thanh Niên',
+                status: 'Còn hàng',
+                unitprice: '132.000đ',
+                information: 'FuSuSu (Song ngữ)',
+                type: 'Hot',
+                img: '../img/S31.jpg',
+                kind: 'TK'
+            },{
+                id: 21,
+                productCode: 'B21',
+                name: 'Thiên Văn Cổ Ứng Dụng Trong Đời Sống Hằng Ngày (2021 - 2030)',
+                publisher: 'Thuận Hoá',
+                status: 'Còn hàng',
+                unitprice: '450.000đ',
+                information: 'FuSuSu (Song ngữ)',
+                type: 'Hot',
+                img: '../img/S32.jpg',
+                kind: 'TK'
+            }
+            
+        ]
+
+        localStorage.setItem('product', JSON.stringify(listProduct))
+        const productData = JSON.parse(localStorage.getItem('product'))
+        const search = document.getElementById("search-input");
+        const searchIcon = document.getElementById("search");
+        const list = [];
+        const displayall = (product) => {
+            const divItems = document.createElement('div');
+            list.push(divItems);
+            divItems.innerHTML =
+            `<div class="hide card col-md-3 ${product.id} ${product.kind} ${product.publisher} ${product.type} search">
+                <a href="detailproduct.html" onclick="setId(${product.id})">
+                    <div>
+                        <img class="card-img-top img_sp" src="${product.img}" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <a href="" style="text-decoration: none;">
+                            <h5 class="card-title product-name detail_text">${product.name}</h5>
+                        </a>
+                        <p class="card-text prince">${product.unitprice}</p>
+                        </div>
+                        </a>
+                        </div>
+                        `
+                        $('.cover-card').append(divItems);
+                    }
+                    
+                     
+        //Tìm kiếm khi tìm kiếm trên Input
+        search.addEventListener("input",function(e){
+            const filterInput = e.target.value.toLowerCase();
+            list.forEach(function(elements){
+                if(elements.innerText.toLowerCase().includes(filterInput)){
+                    elements.classList.remove('hidden');
+                }
+                else{
+                    elements.classList.add('hidden');
+                }
+            })
+        })
+        //Tìm kiếm khi tìm kiếm khi Click vào nút Tìm Kiếm
+        search.addEventListener("input",function(e){
+            const filterInput = e.target.value.toLowerCase();
+            searchIcon.addEventListener("click",function(e){
+                list.forEach(function(elements){
+                    if(elements.innerText.toLowerCase().includes(filterInput)){
+                        elements.classList.remove('hidden');
+                    }
+                    else{
+                        elements.classList.add('hidden');
+                    }
+                })
+            })
+        })
+
+
+        const setId = (id) => {
+            localStorage.setItem('id', id);
+        }
+        //Hiển thị mặc định
+
+        productData.forEach(el => {
+            displayall(el)
+        })
+
+        //Hiển thị theo mục
+        function filterProduct(value) {
+            //Button class code
+            // let buttons = document.querySelectorAll(".link_href");
+            // buttons.forEach((button) => {
+            //     //check if value equals innerText
+            //     if (value.toUpperCase() == button.innerText.toUpperCase()) {
+            //         button.classList.add("active");
+            //     } else {
+            //         button.classList.remove("active");
+            //     }
+            // });
+
+            //select all cards
+            let elements = document.querySelectorAll(".card");
+            //loop through all cards
+            elements.forEach((element) => {
+                //display all cards on 'all' button click
+                if (value == "all") {
+                    element.classList.remove("hide");
+                } else {
+                    //Check if element contains category class
+                    if (element.classList.contains(value)) {
+                        //display element based on category
+                        element.classList.remove("hide");
+                    } else {
+                        //hide other elements
+                        element.classList.add("hide");
+                    }
+                }
+            });
+        }
+
+        window.onload = () => {
+            filterProduct("all");
+        };
+    </script>
+</body>
+
+</html>

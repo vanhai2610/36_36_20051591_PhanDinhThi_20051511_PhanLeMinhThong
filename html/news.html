@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tuc</title>
+    <link rel="stylesheet" href="../css/Home.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/DangNhap.css">
+    <link rel="stylesheet" href="../icon/fontawesome-free-6.1.1-web/css/all.css">
+
+    <script src="../js/Home.js"></script>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <script src="../bootstrap/js/jquery-3.6.0.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/tintuc.css">
+</head>
+
+<body>
+    <div class="header-fix">
+        <div id="header">
+            <div class="shopName">
+                <a href="../html/Home.html"><img src="../img/Logo - 9Slide.png" alt=""></a>
+            </div>
+
+            <div class="search-nav">
+                <input type="text" placeholder="Nhập từ khóa tìm kiếm..." class="input_txt">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </div>
+
+            <div class="button-dang-nhap">
+                <span>
+                    <button onclick="document.getElementById('modal').style.display=('block') ">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </button>
+                </span>
+
+
+
+            </div>
+            <div class="gioHang">
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <div class="gioHang_hover container-fluid">
+                    <div class="tamgiac">
+                        <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                    <div class="row">
+                        <div class="title_gioHang">
+                            <h4>Giỏ hàng của bạn</h4>
+                        </div>
+                        <div class="gioHang_hover_sp">
+                            <div class="img_sanpham">
+                                <img class="img" src="../img/S1.jpg" alt="">
+                            </div>
+                            <div class="name_sanpham"><p>Sách</p></div>
+                            <div class="soluong_sanpham"><select class="form-control small-select" name="quantity" id="qty9343848" onchange="this.form.submit()">
+                                <option value="1" selected="">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>	
+                            </select></div>
+                            <div class="gia_sanpham"><p>150.000đ</p></div>
+                        </div>
+                        </div>
+                        <div class="gioHang_hover_button">
+                            <button type="button" class="btn">Thanh toán</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="nav-fix">
+        <div class="nav">
+            <ul class="dropdown-list">
+                <li class="nav_sp"><a href="../html/Home.html">Trang chủ</a></li>
+                <li class="nav_sp nav_menu_hover"><a href="../html/allsanpham.html">Sản phẩm</a>
+                    <div >
+                        <ul class="dropdown_product_item_menu">
+                            <ul class="ul_menu_item_1">
+                                <li class="ul_menu_item"><a href="../html/allsanpham.html">Sách tổng hợp</a>
+                           
+                                </li>
+                                <li class="ul_menu_item"><a href="../html/allsanpham.html">Sách ngoại ngữ</a>
+                                
+                                </li>
+                                <li class="ul_menu_item"><a href="../html/allsanpham.html">Sách kinh doanh</a>
+                                
+                                </li>
+                                <li class="ul_menu_item"><a href="../html/allsanpham.html">Sách thiếu nhi-văn học</a>
+                                
+                                </li>
+                                <li class="ul_menu_item"><a href="../html/allsanpham.html">Sách phong thuỷ-tham khảo</a>
+                               
+                                </li>
+                            </ul>
+                           <li class="img_item_dropdown_menu">
+                               <img src="../img/S3.jpg" alt="Dong Ho">
+                           </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_sp"><a href="../html/news.html">Tin tức</a></li>
+                <li class="nav_sp"><a href="../html/sitemap.html">Site Map</a></li>
+                <li class="nav_sp"><a href="../html/members.html">Giới thiệu</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="container_allproduct" class="container-fluid">
+        <div class="row mt-20">
+
+            <div class="col-md-1"></div>
+            <div class="col-md-10 row">
+                <div class="col-md-3 left_ctn">
+                    <h4>Danh mục tin tức</h4>
+                    <div class="menu_allproduct nav navbar-nav">
+                        <ul class="ml-15">
+                            <li class="navbar-item"><a class="link_href" href="#" id="formen_click"
+                                    onclick="filterNews('New')">Tin mới</a></li>
+                            <li class="navbar-item"><a class="link_href" href="#" id="forwman_click"
+                                    onclick="filterNews('Hot')">Truy cập nhiều</a></li>
+                            <li class="navbar-item"><a class="link_href" href="#" id="forwman_click"
+                                    onclick="filterNews('all')">Tất cả tin tức</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9  allproducts">
+                    <h4>Tin tức</h4>
+                    <div class="row justify-content-between">
+                        <div class="cover-card announcement col-md-12" id="wmen wwman wbrand neww hotw allw">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+    <!-- Footer---------------------------- -->
+    <div id="content-bottom">
+        <div class="text">
+            <h3 class="top">CHÚNG TÔI Ở ĐÂY</h3>
+            <ul>
+                <li>Nhà sách "Online Bookstore"</li>
+                <li>VPGD: Số 177,Phường 5 - Gò Vấp - TP.HCM</li>
+                <li>Hotline:
+                    <link rel="stylesheet" href="#">0586361021</li>
+                <li>Tư vấn bán hàng: (8h-21h hàng ngày)</li>
+            </ul>
+        </div>
+        <div class="text">
+            <h3 class="top">VỀ ONLINE BOOKSTORE</h3>
+            <ul>
+                <li><a href="#">Tìm kiếm</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Điều khoản dịch vụ</a></li>
+            </ul>
+        </div>
+
+        <div class="text">
+            <h3 class="top">CHÍNH SÁCH</h3>
+            <ul>
+                <li><a href="#">Chính sách đối sản phẩm</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Chính sách vận chuyển</a></li>
+                <li><a href="#">Chính sách bảo hành</a></li>
+                <li><a href="#">Chính sách thanh toán</a></li>
+                <li><a href="#">Chính sách mua hàng</a></li>
+            </ul>
+        </div>
+
+        <div class="text">
+            <h3 class="top">HỖ TRỢ</h3>
+        </div>
+
+        <div class="text">
+            <ul>
+                <h3 class="top">LIÊN HỆ</h3>
+                <li class="icon">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="button-home">
+        <div>
+            <a href="#">
+                <i class="fa-solid fa-angles-up"></i>
+                <p>Quay lại đầu trang</p>
+            </a>
+
+
+        </div>
+    </div>
+
+    </div>
+    <div id="modal">
+        <div class="modal-overlay"></div>
+        <div class="login-box">
+            <h2>Login</h2>
+            <button onclick="document.getElementById('modal').style.display=('none') ">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <form>
+                <div class="user-box">
+                    <input type="text" name="" required="">
+                    <label>Username</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="" required="">
+                    <label>Password</label>
+                </div>
+                <div class="button-submit">
+                    <a href="#" class="link">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> Đăng nhập
+                    </a>
+                </div>
+            </form>
+            <span class="checkBox"><input type="checkbox"> Nhớ mật khẩu</span>
+            <p>Bạn chưa có tài khoản? <a href="../html/Form-dang-ky.html">Đăng kí</a> ngay</p>
+        </div>
+    </div>
+
+    <script>
+        const listnews = [
+            {
+                id: 1,
+                img: '../img/New1.jpg',
+                name: 'Con chó nhỏ mang giỏ hoa hồng',
+                title: 'Con chó nhỏ mang giỏ hoa hồng là một bức tranh đầy màu sắc về gia đình nhà chị Ni cùng với...',
+
+                type: 'Hot',
+
+                information: 'Con chó nhỏ mang giỏ hoa hồng là một bức tranh đầy màu sắc về gia đình nhà chị Ni cùng với năm chú chó nhỏ nhỏ xinh xinh qua cái nhìn của nhân vật tôi – chính là một chú chó tên là Batô : Suku “thiên thần” – con chó đực duy nhất trong đàn, nó béo ục ịch đến mức báo động nhưng lại có vẻ ngoài với đôi mắt thiên thần có thể hạ gục bất cứ ai; Haili – một chú chó thông minh, có vẻ khá là chảnh chọe; Êmê – một con chó cứng đầu, “nó không muốn cai trị ai và cũng không muốn ai cai tị nó”; Pig – một con chó săn nhưng lại rất hiền lành và cuối cùng là Batô – nó tự cho mình là con chó xấu nhất đàn.',
+            },
+            {
+                id: 2,
+                img: '../img/New2.jpg',
+                name: 'Chạng Vạng',
+                title: 'Twilight là tên tiếng anh của cuốn tiểu thuyết lãng mạn “Chạng vạng” về...',
+
+                type: 'Hot',
+
+                information: 'Twilight là tên tiếng anh của cuốn tiểu thuyết lãng mạn “Chạng vạng” về ma cà rồng của nhà văn Stephanie Meyer. Cuốn sách được xuất bản lần đầu tiên trong năm 2005 dưới dạng bìa cứng. Đây là cuốn sách đầu tiên trong bộ truyện Chạng vạng, nơi cô gái trẻ Isabella Swan 17 tuổi chuyển từ Phoenix, Arizona đến Forks, Washington và đối mặt với những nguy hiểm trong cuộc sống khi cô ngã lòng trước một ma cà rồng, Edward Cullen.',
+            },
+            {
+                id: 3,
+                img: '../img/New3.jpg',
+                name: 'Đắc Nhân Tâm',
+                title: 'Những gì cần có để bạn giao tiếp thành công đều được chứa đựng trong “Đắc nhân tâm”.',
+
+                type: 'Hot',
+
+                information: 'Montblanc là một công ty với những dụng cụ bút viết sang trọng và công ty bắt đầu sản xuất đồng hồ vào năm 1996 trở lại đây, nhưng Montblanc vẫn cho thấy được kinh nghiệm của mình trên thị trường đồng hồ nói chung. ',
+            },
+            {
+                id: 4,
+                img: '../img/New4.jpg',
+                name: 'Mắt Biếc',
+                title: '“Mắt biếc” – một tâm hồn lãng mạn, một tình yêu nồng nàn nhưng lại có kết cục buồn. Cuốn sách “Mắt biếc” của Nguyễn Nhật Ánh...',
+
+                type: 'New',
+                information: '“Mắt biếc” – một tâm hồn lãng mạn, một tình yêu nồng nàn nhưng lại có kết cục buồn. Cuốn sách “Mắt biếc” của Nguyễn Nhật Ánh thực sự đã chạm vào tâm hồn của những kẻ đang yêu, đã và đang dành cả thanh xuân, tuổi trẻ của mình để yêu đơn phương một người nào đó. Không còn xa lạ với những câu chuyện tình yêu đơn phương của Nguyễn Nhật Ánh nhưng đến với “Mắt biếc” việc xây dựng hình tượng và nội dung có phần khác. Vẫn với những ngôn từ giản đơn, gần gũi, cuốn sách sẽ gieo lại trong lòng độc giả một nỗi niềm nuối tiếc, chơi vơi, vừa yêu vừa giận.',
+            },
+            {
+                id: 5,
+                img: '../img/New5.jpg',
+                name: 'Thằng Quỷ Nhỏ',
+                title: 'Một ai đó đã từng nói với mình rằng: “Tại những ngày ánh mặt trời rực rỡ chói chang nhất chúng tôi biết có nhiều thứ đã hoặc sẽ kết thúc. Sau này...',
+
+                type: 'New',
+                information: 'Một ai đó đã từng nói với mình rằng: “Tại những ngày ánh mặt trời rực rỡ chói chang nhất chúng tôi biết có nhiều thứ đã hoặc sẽ kết thúc. Sau này trên đường đời đông đúc, đứa hào quang sáng chói, đứa ảm đạm chán chường, cũng đừng quên rằng đã từng ngồi chung trong một giảng đường, từng cùng đau đầu vì một kì thi”. Có lẽ, những câu chuyện tuổi học trò, những kí ức tuổi hồn nhiên mới lớn sẽ luôn luôn là những mảnh ghép rực rỡ và đáng nhớ nhất trong cuộc đời của chúng ta. Tuổi thanh xuân thật đẹp, cũng thật ngắn ngủi và chứa đầy tiếc nuối mỗi khi ta ngoảnh đầu nhìn lại. Ở đó có bạn bè, có thầy cô, có tình yêu non nớt nhưng nhiều hơn vẫn là tình bạn trong sáng… Nếu có một cơ hội, bạn có bằng lòng quay trở về quãng thời gian ngây thơ nhất ấy một lần nữa hay không?',
+            },
+            {
+                id: 6,
+                img: '../img/New6.jpg',
+                name: 'Dám Hạnh Phúc',
+                title: '“Dám Hạnh Phúc”: Là Hiện Thân Của Tình Yêu “Chân Chính”',
+
+                type: 'New',
+                information: 'Dám bị ghét đưa độc giả trải qua năm phần chính, tương đương với năm quan điểm của Adler về cuộc sống. Trong mỗi quan điểm lớn bao hàm các luận điểm nhỏ dần dần được làm rõ bởi sự dẫn dắt của triết gia và phản biện bởi anh thanh niên. Cách viết theo kiểu đối thoại khiến cho dòng tư duy của người đọc không bị đứt quãng và có cảm giác như chính mình cũng đang tham gia vào cuộc đối thoại đó, sự tương tác qua lại khiến cho cuốn sách trở nên hấp dẫn và lôi cuốn khó cưỡng. Đây là cuốn sách thực sự nên đọc và tĩnh tâm cùng, đặc biệt là nên đọc song song trong quá trình đối thoại và soi chiếu bản thân.',
+            }
+
+        ]
+        localStorage.setItem('news', JSON.stringify(listnews))
+        const newsData = JSON.parse(localStorage.getItem('news'))
+        const displayall = (news) => {
+            const card =
+                `<div class="hide card col-md-3 ">
+                <a href="newsdetail.html" onclick="setId(${news.id})">
+                    <div>
+                        <img class="card-img-top" src="${news.img}" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <a href="newsdetail.html" onclick="setId(${news.id})" style="text-decoration: none;">
+                            <h5 class="card-title">${news.name}</h5>
+                        </a>
+                        
+                        <p class="card-title_content"> ${news.title}<a  class="card-title" href="newsdetail.html" onclick="setId(${news.id})"><b>Xem thêm</b></a></p>
+                    </div>
+                </a>
+            </div>
+            `
+            $('.cover-card').append(card);
+        }
+        const setId = (id) => {
+            localStorage.setItem('id', id);
+        }
+        //Hiển thị mặc định
+
+        newsData.forEach(el => {
+            displayall(el)
+        })
+
+        //Hiển thị theo mục
+        function filterNews(value) {
+            //Button class code
+            let buttons = document.querySelectorAll(".link_href");
+            buttons.forEach((button) => {
+                //check if value equals innerText
+                if (value.toUpperCase() == button.innerText.toUpperCase()) {
+                    button.classList.add("active");
+                } else {
+                    button.classList.remove("active");
+                }
+            });
+
+            //select all cards
+            let elements = document.querySelectorAll(".card");
+            //loop through all cards
+            elements.forEach((element) => {
+                //display all cards on 'all' button click
+                if (value == "all") {
+                    element.classList.remove("hide");
+                } else {
+                    //Check if element contains category class
+                    if (element.classList.contains(value)) {
+                        //display element based on category
+                        element.classList.remove("hide");
+                    } else {
+                        //hide other elements
+                        element.classList.add("hide");
+                    }
+                }
+            });
+        }
+
+
+        $(document).ready(() => {
+            $('#btn-search').click(() => {
+                const productCode = $('#search-text').val()
+                if (productCode.trim() === '' || productCode == '') {
+                    $('.announcement').html('')
+                    productData.forEach(display)
+                    return true
+                }
+                const findproductCode = productData.find(el => el.productCode == productCode)
+                console.log(findproductCode)
+                if (findproductCode == undefined) {
+                    $('.announcement').html('<i>Khong tim thay san pham</i>')
+                    return false
+                }
+                $('.announcement').html('')
+                display(findproductCode)
+                return true;
+            })
+        })
+        window.onload = () => {
+            filterNews("all");
+        };
+    </script>
+</body>
+
+</html>

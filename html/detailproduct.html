@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="../css/Home.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/DangNhap.css">
+    <link rel="stylesheet" href="../icon/fontawesome-free-6.1.1-web/css/all.css">
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/Home.js"></script>
+     
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <script src="../bootstrap/js/jquery-3.6.0.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/detailproduct.css">
+    <link rel="stylesheet" href="../css/allproduct.css">
+</head>
+
+<body>
+    <div id="main">
+        
+        <div class="header-fix">
+            <div id="header">
+                <div class="shopName">
+                    <a href="../html/Home.html"><img src="../img/Logo - 9Slide.png" alt=""></a>
+                </div>
+
+                <div class="search-nav">
+                    <input type="text" placeholder="Nhập từ khóa tìm kiếm..." class="input_txt">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                   
+                </div>
+
+                <div class="button-dang-nhap">
+                    <span>
+                        <button onclick="document.getElementById('modal').style.display=('block') ">
+                            <i class="fa-solid fa-circle-user"></i>
+                        </button>
+                    </span>
+                   
+
+                  
+                </div>
+                <div class="gioHang">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <div class="gioHang_hover container-fluid">
+                        <div class="tamgiac">
+                            <i class="fa-solid fa-caret-up"></i>
+                        </div>
+                        <div class="row">
+                            <div class="title_gioHang">
+                                <h4>Giỏ hàng của bạn</h4>
+                            </div>
+                            <div class="gioHang_hover_sp">
+                                <div class="img_sanpham">
+                                    <img class="img" src="../img/S1.jpg" alt="">
+                                </div>
+                                <div class="name_sanpham"><p>Sách</p></div>
+                                <div class="soluong_sanpham"><select class="form-control small-select" name="quantity" id="qty9343848" onchange="this.form.submit()">
+                                    <option value="1" selected="">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>	
+                                </select></div>
+                                <div class="gia_sanpham"><p>150.000đ</p></div>
+                            </div>
+                            <div class="gioHang_hover_button">
+                                <button type="button" class="btn">Thanh toán</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="nav-fix">
+            <div class="nav">
+                <ul class="dropdown-list">
+                    <li class="nav_sp"><a href="../html/Home.html">Trang chủ</a></li>
+                    <li class="nav_sp nav_menu_hover"><a href="../html/allsanpham.html">Sản phẩm</a>
+                        <div >
+                            <ul class="dropdown_product_item_menu">
+                                <ul class="ul_menu_item_1">
+                                    <li class="ul_menu_item"><a href="../html/allsanpham.html">Sách tổng hợp</a>
+                               
+                                    </li>
+                                    <li class="ul_menu_item"><a href="../html/allsanpham.html">Sách ngoại ngữ</a>
+                                    
+                                    </li>
+                                    <li class="ul_menu_item"><a href="../html/allsanpham.html">Sách kinh doanh</a>
+                                    
+                                    </li>
+                                    <li class="ul_menu_item"><a href="../html/allsanpham.html">Sách thiếu nhi-văn học</a>
+                                    
+                                    </li>
+                                    <li class="ul_menu_item"><a href="../html/allsanpham.html">Sách phong thuỷ-tham khảo</a>
+                                   
+                                    </li>
+                                </ul>
+                               <li class="img_item_dropdown_menu">
+                                   <img src="../img/S3.jpg" alt="Dong Ho">
+                               </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav_sp"><a href="../html/news.html">Tin tức</a></li>
+                    <li class="nav_sp"><a href="../html/sitemap.html">Site Map</a></li>
+                    <li class="nav_sp"><a href="../html/members.html">Giới thiệu</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="details container-fluid p-0 m-0">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 row">
+                <div class="col-md-6">
+                    <div class="img_Philip">
+                        <img src="../img/brand2.png" alt="" id="img-product" class="img_sp">
+                    </div>
+                </div>
+                <div class="col-md-6 pdl-75">
+                    <div class="productdetail-info_detail">
+                        <h3 class="productdetail-title"></h3>
+                        <div class="soTien">
+                            <p class="money"></p>
+                        </div>
+                      <div class="quantity">
+                        <span>Số lượng:</span>
+                        <select class="form-control small-select" name="quantity" id="qty9343848" onchange="this.form.submit()">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>	
+                        </select>
+                      </div>
+                        <div class="btn-Giohang">
+                            <button class="add-cart" onclick="addItemToCart(title, price, img);">Thêm vào giỏ hàng</button>
+                          
+                        </div>
+                        <div class="thongSoKyThuat">
+                            <div class="atribute_item">
+                                <span class="title_ctsp">Chi tiết sản phẩm</span>
+                            </div>
+                          <div class="information_detail_item">
+                            <div class="atribute_item">
+                                <span class="text-bold">Mã Sản Phẩm:</span>
+                                <span class="productCode"></span>
+                            </div>
+                            <div class="atribute_item">
+                                <span class="text-bold">Nhà xuất bản: </span>
+                                <span class="publisher"></span>
+                            </div>
+                            <div class="atribute_item">
+                                <span class="text-bold">Tình Trạng:</span>
+                                <span class="status"></span>
+                            </div>
+                            
+                          </div>
+              
+                        </div>
+                        
+                    </div>
+                </div>
+              
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+
+
+    <div class="relate_product">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 mbt-25">
+            <div class="title_relate_product">
+                <h3>Có thể bạn sẽ thích</h3>
+            </div>
+            <div class="ct_relate_product cover-card">
+                <div class="card col-md-3">
+                    <a href="detailproduct.html" onclick="setId(2)">
+                        <div>
+                            <img class="card-img-top" src="../img/S13.jpg" alt="Card image cap">
+                        </div>
+                        </a><div class="card-body"><a href="detailproduct.html" onclick="setId(2)">
+                            </a><a href="" style="text-decoration: none;">
+                                <h5 class="card-title">Hợp nhất với vũ trụ</h5>
+                            </a>
+                            <p class="card-text">60.000đ</p>
+                        </div>
+                    
+                </div>
+                <div class="card col-md-3">
+                    <a href="detailproduct.html" onclick="setId(3)">
+                        <div>
+                            <img class="card-img-top" src="../img/S14.jpg" alt="Card image cap">
+                        </div>
+                        </a><div class="card-body"><a href="detailproduct.html" onclick="setId(3)">
+                            </a><a href="" style="text-decoration: none;">
+                                <h5 class="card-title">Giao tiếp bất kỳ ai</h5>
+                            </a>
+                            <p class="card-text">55.000₫</p>
+                        </div>
+                    
+                </div>
+                <div class="card col-md-3">
+                    <a href="detailproduct.html" onclick="setId(5)">
+                        <div>
+                            <img class="card-img-top" src="../img/S16.jpg" alt="Card image cap">
+                        </div>
+                        </a><div class="card-body"><a href="detailproduct.html" onclick="setId(5)">
+                            </a><a href="" style="text-decoration: none;">
+                                <h5 class="card-title">Hạnh Phúc Tắc Đường Ở Một Quãng Xa Xôi</h5>
+                            </a>
+                            <p class="card-text">95.000₫</p>
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+      <!-- Footer---------------------------- -->
+      <div id="content-bottom">
+        <div class="text">
+            <h3 class="top">CHÚNG TÔI Ở ĐÂY</h3>
+            <ul>
+                <li>Nhà sách "Online Bookstore"</li>
+                <li>VPGD: Số 177,Phường 5 - Gò Vấp - TP.HCM</li>
+                <li>Hotline:
+                    <link rel="stylesheet" href="#">0586361021</li>
+                <li>Tư vấn bán hàng: (8h-21h hàng ngày)</li>
+            </ul>
+        </div>
+        <div class="text">
+            <h3 class="top">VỀ ONLINE BOOKSTORE</h3>
+            <ul>
+                <li><a href="#">Tìm kiếm</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Điều khoản dịch vụ</a></li>
+            </ul>
+        </div>
+
+        <div class="text">
+            <h3 class="top">CHÍNH SÁCH</h3>
+            <ul>
+                <li><a href="#">Chính sách đối sản phẩm</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Chính sách vận chuyển</a></li>
+                <li><a href="#">Chính sách bảo hành</a></li>
+                <li><a href="#">Chính sách thanh toán</a></li>
+                <li><a href="#">Chính sách mua hàng</a></li>
+            </ul>
+        </div>
+
+        <div class="text">
+            <h3 class="top">HỖ TRỢ</h3>
+        </div>
+
+        <div class="text">
+            <ul>
+                <h3 class="top">LIÊN HỆ</h3>
+                <li class="icon">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="button-home">
+        <div>
+            <a href="#">
+                <i class="fa-solid fa-angles-up"></i>
+                <p>Quay lại đầu trang</p>
+            </a>
+        </div>
+    </div>
+   
+</div>
+<div id="modal">
+    <div class="modal-overlay"></div>
+    <div class="login-box">
+        <h2>Login</h2>
+        <button onclick="document.getElementById('modal').style.display=('none') ">
+            <i class="fa-solid fa-xmark" ></i>
+        </button>
+        <form>
+            <div class="user-box">
+                <input type="text" name="" required="">
+                <label>Username</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="" required="">
+                <label>Password</label>
+            </div>
+            <div class="button-submit">
+                <a href="#" class="link">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span> Đăng nhập
+                </a>
+            </div>
+        </form>
+        <span class="checkBox"><input type="checkbox"> Nhớ mật khẩu</span> 
+        <p>Bạn chưa có tài khoản? <a href="../html/Form-dang-ky.html">Đăng kí</a> ngay</p>
+    </div>
+</div>
+
+<!-- GIỎ HÀNG -->
+<div id="myModal-giohang" class="modal-giohang">
+    <div class="giohang-content">
+        <div class="giohang-header">
+            <h5 class="giohang-title">Giỏ Hàng</h5>
+            <span class="close" onclick="giohangClose()" id="icon-close">&times;</span>
+        </div>
+        <div class="giohang-body" >
+            <div class="cart-items">
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                    <span class="cart-price cart-header cart-column">Giá</span>
+                    <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                </div>
+                <div class="cart-items">
+                    <div class="cart-row">
+                        <div class="cart-item cart-column">
+                            <!-- <img class="cart-item-image" src="" width="100" height="100">
+                            <span class="cart-item-title"></span> -->
+                        </div>
+                        <span class="cart-price cart-column"></span>
+                        <div class="cart-quantity cart-column">
+                            <!-- <input class="cart-quantity-input" type="number" value="1">
+                            <button class="btn btn-danger" type="button"  >Xóa</button> -->
+                        </div>
+                    </div> 
+                </div>
+            </div>
+             
+        </div>
+        <div class="giohang-footer">
+            <div class="cart-total" >
+                <strong class="cart-total-title">Tổng Cộng:</strong>
+                <span class="cart-total-price" onblur="updatecart()">0VNĐ</span>
+            </div>
+            <button type="button" class="btn btn-secondary close-footer" onclick="giohangClose()">Đóng</button>
+            <button type="button" class="btn btn-primary order">Thanh Toán</button>
+        </div>
+    </div>
+</div>
+<script src="..//js/allproduct.js"></script>
+<script src="../js/Gio_Hang.js"></script>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+      <script>
+          
+          const productList = JSON.parse(localStorage.getItem('product'))
+          const id = JSON.parse(localStorage.getItem('id'))
+          const findId = productList.find(el => el.id === id)
+          const setId = (id) => {
+              localStorage.setItem('id', id);
+          }
+         
+          $(document).ready(() => {
+              $('.productdetail-title').html(findId.name)
+              $('.publisher').html(findId.publisher)
+              $('.status').html(findId.status)
+              $('.money').html(findId.unitprice)
+              $('.information').html(findId.information)
+              $('.productCode').html(findId.productCode)
+              $('#img-product').attr('src', findId.img)
+            //   $('.diameter').html(findId.diameter)
+            //   $('.rope_size').html(findId.rope_size)
+            //   $('.material').html(findId.material)
+            //   $('.origin').html(findId.origin)
+          })
+        // let count = 1;
+        // let temp = 0
+        // const decrease = document.querySelector('.decrease')
+        // const quantity = document.getElementById('number');
+        // const increase = document.querySelector('.increase')
+        // const addproductdetail = document.querySelector('.add-productdetail')
+// xóa cart
+var remove_cart = document.getElementsByClassName("btn-danger");
+for (var i = 0; i < remove_cart.length; i++) {
+  var button = remove_cart[i]
+  button.addEventListener("click", function () {
+    var button_remove = event.target
+    button_remove.parentElement.parentElement.remove()
+  })
+}
+
+var add_cart = document.getElementsByClassName("add-cart");
+console.log(add_cart);
+for (var i = 0; i < add_cart.length; i++) {
+  var add = add_cart[i];
+  add.addEventListener("click", function (event) {
+
+    var button = event.target;
+    var product = button.parentElement;
+    var img = product.parentElement.getElementsByClassName("img_sp")[0].src
+    var title = product.getElementsByClassName("productdetail-title")[0].innerText
+    var price = product.getElementsByClassName("money")[0].innerText
+    addItemToCart(title, price,img)
+    // Khi thêm sản phẩm vào giỏ hàng thì sẽ hiển thị modal
+    modal.style.display = "block";
+    modal.style.display = "flex";
+    modal.style.alignItems = "center";
+    modal.style.justifyContent = "center";
+    updatecart()
+  })
+} 
+
+function updatecart() {
+    var cart_item = document.getElementsByClassName("cart-items");
+    console.log(cart_item)
+    var cart_rows = cart_item.getElementsByClassName("cart-row");
+    var total = 0;
+    for (var i = 0; i < cart_rows.length; i++) {
+      var cart_row = cart_rows[i]
+      var price_item = cart_row.getElementsByClassName("cart-price ")
+      var quantity_item = cart_row.getElementsByClassName("cart-quantity-input")
+      var price = parseFloat(price_item.innerText)// chuyển một chuổi string sang number để tính tổng tiền.
+      var quantity = quantity_item.value // lấy giá trị trong thẻ input
+      total = total + (price * quantity)
+    }
+    document.getElementsByClassName("cart-total-price").innerText = total + 'VNĐ'
+    // Thay đổi text = total trong .cart-total-price. Chỉ có một .cart-total-price nên mình sử dụng [0].
+  }
+
+  // thay đổi số lượng sản phẩm
+var quantity_input = document.getElementsByClassName("cart-quantity-input");
+for (var i = 0; i < quantity_input.length; i++) {
+  var input = quantity_input[i];
+  input.addEventListener("change", function (event) {
+    var input = event.target
+    if (isNaN(input.value) || input.value <= 0) {
+      input.value = 1;
+    }
+    updatecart()
+  })
+}
+
+
+function addItemToCart(title, price, img) {
+  var cartRow = document.createElement('div')
+  cartRow.classList.add('cart-row')
+  var cartItems = document.getElementsByClassName('cart-items')[0]
+  var cart_title = cartItems.getElementsByClassName('cart-item-title')
+//   Nếu title của sản phẩm bằng với title mà bạn thêm vao giỏ hàng thì sẽ thông cho user.
+  for (var i = 0; i < cart_title.length; i++) {
+    if (cart_title[i].innerText == title) {
+      alert('Sản Phẩm Đã Có Trong Giỏ Hàng')
+      return
+    }
+  }
+
+  var cartRowContents = `
+  <div class="cart-item cart-column">
+      <img class="cart-item-image" src="${img}" width="100" height="100">
+      <span class="cart-item-title">${title}</span>
+  </div>
+  <span class="cart-price cart-column">${price}</span>
+  <div class="cart-quantity cart-column">
+      <input class="cart-quantity-input" type="number" value="1">
+      <button class="btn btn-danger" type="button">Xóa</button>
+  </div>`
+  cartRow.innerHTML = cartRowContents
+  cartItems.append(cartRow)
+  cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', function () {
+    var button_remove = event.target
+    button_remove.parentElement.parentElement.remove()
+    updatecart()
+  })
+  cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', function (event) {
+    var input = event.target
+    if (isNaN(input.value) || input.value <= 0) {
+      input.value = 1;
+    }
+    updatecart()
+  })
+}
+        
+    </script>
+
+</body>

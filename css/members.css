@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --white-color: #fff;
+    --bg-color: rgb(188, 228, 255);
+    --text-color: #04b995;
+}
+
+#main-member {
+    background-color: #fff;
+}
+.info-members h1{
+    font-size: 23px;
+    margin-bottom: 30px;
+    font-weight: 560;
+    height: auto;
+    padding-bottom: 0;
+    line-height: 1.2;
+    font-weight: 600!important;
+    font-family: Muli,sans-serif!important;
+    text-align: center;
+
+}
+.info-members .img-member{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+.img-face{
+    text-align: center;
+   
+    color: rgb(67, 66, 66);
+    padding: 10px 0;
+    border: 1px solid #04b995;
+}
+.img-face img{
+    width: 300px;
+    height: 280px;
+    border-radius: 50%;
+}
+.img-face img:hover{
+    border: 3px solid #04b995;
+}
+.img-face a{
+    color: rgb(67, 66, 66);
+    font-size: 20px;
+}
+.img-face a:hover{
+    color: var(--bg-color);
+}
+.img-face p{
+    color: rgb(67, 66, 66);
+    font-style: italic;
+}
+.interests {
+    margin-left: 10px;
+    list-style: none;
+}
+.heading{
+    color: #04b995;
+    text-align: center;
+}
+ 
+.interests li{
+    list-style: none;
+    border-bottom: 1px solid #04b995;
+    padding: 10px;
+    color: rgb(67, 66, 66);
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    width: 380px;
+    margin:0 50px ;
+}
+#website{
+    padding-bottom: 50px;
+}
+.website_text p{
+    width: 65%;
+    margin:auto;
+    color: rgb(67, 66, 66);
+    text-align: justify;
+}
+.img_introduce img
+{
+    width: 100%;
+}
+.title_intr h3
+{
+    font-size: 23px;
+    margin-bottom: 30px;
+    font-weight: 560;
+    height: auto;
+    padding-bottom: 0;
+    line-height: 1.2;
+   
+    font-weight: 600!important;
+    font-family: Muli,sans-serif!important;
+}
+.text_ct p
+{
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(59, 58, 58);
+    line-height: 40px;
+    font-weight: 300;
+}
+.mt-45
+{
+    margin-top: 45px;
+}
+.mt-145
+{
+    margin-top: 145px;
+}
+.title_intr h3::before
+{
+}
+#main-member
+{
+    margin-top:100px;
+}
+ 
